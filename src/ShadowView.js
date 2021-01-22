@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { requireNativeComponent, Platform, View } from 'react-native';
 
-const RNTShadowView = requireNativeComponent('RNTShadowView', ShadowView);
+// Needs this to work on web
+const RNTShadowView = requireNativeComponent ? requireNativeComponent('RNTShadowView', ShadowView) : null;
 
 class ShadowView extends Component {
     constructor(props) {
