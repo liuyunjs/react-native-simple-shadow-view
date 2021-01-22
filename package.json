@@ -1,6 +1,6 @@
 {
   "name": "@rover656/react-native-simple-shadow-view",
-  "version": "1.7.0",
+  "version": "1.7.2",
   "description": "a Native shadow view for react native, for any React Native platform.",
   "main": "index.js",
   "scripts": {
