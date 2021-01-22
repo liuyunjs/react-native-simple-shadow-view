@@ -9,7 +9,7 @@ class ShadowView extends Component {
     }
 
     render() {
-      if (Platform.OS === 'ios') {
+      if (Platform.OS !== 'android') {
         return (<View
           {...this.props}
         />)

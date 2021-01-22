@@ -1,16 +1,16 @@
 
 # react-native-simple-shadow-view
 
-This Module is updated version of https://github.com/ConduitMobileRND/react-native-simple-shadow-view
-There was some AndroidX issue with actual version.
+This Module is updated version of https://github.com/rover656/react-native-simple-shadow-view
+Fixing AndroidX support and adds support for Web and Desktop.
 
 ## Getting started
 
-`$ npm install @vikasrg/react-native-simple-shadow-view --save`
+`$ npm install @rover656/react-native-simple-shadow-view --save`
 
 ### Mostly automatic installation
 
-`$ react-native link @vikasrg/react-native-simple-shadow-view`
+`$ react-native link @rover656/react-native-simple-shadow-view`
 
 ### Manual installation
 
@@ -49,7 +49,7 @@ Set shadow parameters to the ShadowView just as you use shadows in iOS. it will 
 
 ```javascript
 import React, { Component } from 'react';
-import ShadowView from '@vikasrg/react-native-simple-shadow-view'
+import ShadowView from '@rover656/react-native-simple-shadow-view'
 
 class MyView extends Component {
 
