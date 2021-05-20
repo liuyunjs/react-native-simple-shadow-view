@@ -1,6 +1,6 @@
 {
   "name": "@liuyunjs/react-native-simple-shadow-view",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "a Native shadow view for react native, for any React Native platform.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
