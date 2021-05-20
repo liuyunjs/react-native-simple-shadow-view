@@ -1,19 +1,17 @@
-
 # react-native-simple-shadow-view
 
-This Module is updated version of https://github.com/rover656/react-native-simple-shadow-view
+This Module is updated version of https://github.com/liuyunjs/react-native-simple-shadow-view
 Fixing AndroidX support and adds support for Web and Desktop.
 
 ## Getting started
 
-`$ npm install @rover656/react-native-simple-shadow-view --save`
+`$ npm install @liuyunjs/react-native-simple-shadow-view --save`
 
 ### Mostly automatic installation
 
-`$ react-native link @rover656/react-native-simple-shadow-view`
+`$ react-native link @liuyunjs/react-native-simple-shadow-view`
 
 ### Manual installation
-
 
 #### iOS
 
@@ -25,23 +23,24 @@ Fixing AndroidX support and adds support for Web and Desktop.
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.como.RNTShadowView.ShadowViewPackage;` to the imports at the top of the file
-  - Add `new ShadowViewPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':@vikasrg/react-native-simple-shadow-view'
-  	project(':@vikasrg/react-native-simple-shadow-view').projectDir = new File(rootProject.projectDir, 	'../node_modules/@vikasrg/react-native-simple-shadow-view/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      implementation project(':@vikasrg/react-native-simple-shadow-view')
-  	```
-4. Insert the following lines inside the defaultConfig block in `android/app/build.gradle`:
-  	```
-      renderscriptTargetApi 18
-      renderscriptSupportModeEnabled true
-  	```
 
+- Add `import com.como.RNTShadowView.ShadowViewPackage;` to the imports at the top of the file
+- Add `new ShadowViewPackage()` to the list returned by the `getPackages()` method
+
+2. Append the following lines to `android/settings.gradle`:
+   ```
+   include ':@liuyunjs/react-native-simple-shadow-view'
+   project(':@liuyunjs/react-native-simple-shadow-view').projectDir = new File(rootProject.projectDir, 	'../node_modules/@liuyunjs/react-native-simple-shadow-view/android')
+   ```
+3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+   ```
+     implementation project(':@liuyunjs/react-native-simple-shadow-view')
+   ```
+4. Insert the following lines inside the defaultConfig block in `android/app/build.gradle`:
+   ```
+     renderscriptTargetApi 18
+     renderscriptSupportModeEnabled true
+   ```
 
 ## Usage
 
@@ -49,7 +48,7 @@ Set shadow parameters to the ShadowView just as you use shadows in iOS. it will 
 
 ```javascript
 import React, { Component } from 'react';
-import ShadowView from '@rover656/react-native-simple-shadow-view'
+import { ShadowView } from '@liuyunjs/react-native-simple-shadow-view'
 
 class MyView extends Component {
 

@@ -2,7 +2,8 @@
   "name": "@liuyunjs/react-native-simple-shadow-view",
   "version": "1.7.2",
   "description": "a Native shadow view for react native, for any React Native platform.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "rimraf lib; tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
