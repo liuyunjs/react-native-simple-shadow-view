@@ -1,14 +1,15 @@
 {
-  "name": "@rover656/react-native-simple-shadow-view",
+  "name": "@liuyunjs/react-native-simple-shadow-view",
   "version": "1.7.2",
   "description": "a Native shadow view for react native, for any React Native platform.",
   "main": "index.js",
   "scripts": {
+    "build": "rimraf lib; tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rover656/react-native-simple-shadow-view.git"
+    "url": "https://github.com/liuyunjs/react-native-simple-shadow-view.git"
   },
   "keywords": [
     "react-native",
@@ -26,7 +27,18 @@
     "react-native": "^0.63.4"
   },
   "bugs": {
-    "url": "https://github.com/rover656/react-native-simple-shadow-view/issues"
+    "url": "https://github.com/liuyunjs/react-native-simple-shadow-view/issues"
   },
-  "homepage": "https://github.com/rover656/react-native-simple-shadow-view#readme"
+  "homepage": "https://github.com/liuyunjs/react-native-simple-shadow-view#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.6",
+    "@types/react-native": "^0.64.5",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "ts-toolbelt": "^9.6.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  }
 }
