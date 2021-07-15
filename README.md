@@ -22,10 +22,9 @@ Fixing AndroidX support and adds support for Web and Desktop.
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
 
 - Add `import com.como.RNTShadowView.ShadowViewPackage;` to the imports at the top of the file
-- Open up `android/app/src/main/java/[...]/MainApplication.java`
 - Add `new ShadowViewPackage()` to the list returned by the `getPackages()` method `packages.add(new ShadowViewPackage());` before 
 
 2. Append the following lines to `android/settings.gradle`:
