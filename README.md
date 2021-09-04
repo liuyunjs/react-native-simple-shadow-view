@@ -22,19 +22,19 @@ Fixing AndroidX support and adds support for Web and Desktop.
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
 
 - Add `import com.como.RNTShadowView.ShadowViewPackage;` to the imports at the top of the file
-- Add `new ShadowViewPackage()` to the list returned by the `getPackages()` method
+- Add `new ShadowViewPackage()` to the list returned by the `getPackages()` method `packages.add(new ShadowViewPackage());` before `return packages`
 
 2. Append the following lines to `android/settings.gradle`:
    ```
-   include ':@liuyunjs/react-native-simple-shadow-view'
-   project(':@liuyunjs/react-native-simple-shadow-view').projectDir = new File(rootProject.projectDir, 	'../node_modules/@liuyunjs/react-native-simple-shadow-view/android')
+   include ':@liuyunjs:react-native-simple-shadow-view'
+   project(':@liuyunjs:react-native-simple-shadow-view').projectDir = new File(rootProject.projectDir, 	'../node_modules/@liuyunjs/react-native-simple-shadow-view/android')
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
    ```
-     implementation project(':@liuyunjs/react-native-simple-shadow-view')
+     implementation project(':@liuyunjs:react-native-simple-shadow-view')
    ```
 4. Insert the following lines inside the defaultConfig block in `android/app/build.gradle`:
    ```
